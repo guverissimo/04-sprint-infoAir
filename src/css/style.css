@@ -1,9 +1,12 @@
 html, body {
   font-family: "Roboto", sans-serif;
   color: #FFF;
+  box-sizing: border-box;
 }
 
 .main-container {
+  padding: 0;
+  margin: 0;
   background-color: #101010;
   width: 100%;
   height: 100vh;
@@ -32,10 +35,11 @@ html, body {
   font-size: 0.7317073171rem;
   text-transform: uppercase;
   padding: 5px 30px;
-  border: 2px solid #1b64ce;
+  border: 1px solid #1b64ce;
   border-radius: 10px;
   font-weight: 300;
   transition: 0.4s;
+  margin-top: 1.5rem;
 }
 .login p:hover {
   box-shadow: 1px 1px 15px 3px #1b64ce;
@@ -62,4 +66,57 @@ html, body {
 .logo p span {
   font-weight: 900;
   color: #949494 !important;
+}
+
+.rodape header {
+  display: flex;
+  flex-direction: column;
+}
+.rodape header .logo {
+  width: 150px;
+  margin: 2rem 0;
+}
+.rodape header .redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+.rodape header .redes .rede {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.rodape header .redes .rede a {
+  color: white;
+}
+.rodape header .redes .rede a img {
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.4s;
+}
+.rodape header .redes .rede a img:hover {
+  border: 2px solid #1b64ce;
+  box-shadow: 1px 1px 10px 5px #1b64ce;
+  transition: 0.4s;
+}
+.rodape .download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+.rodape .download .lojas {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 1rem;
+}
+.rodape .download .lojas a img {
+  width: 200px;
 }/*# sourceMappingURL=style.css.map */

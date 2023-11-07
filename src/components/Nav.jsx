@@ -73,7 +73,7 @@ const Nav = () => {
               </li>
             </ul>
           </div>
-            <div className="login">
+            <div className="collapse navbar-collapse login" id="navbarNavDropdown">
               <p>Cadastro</p>
               <p>Login</p>
             </div>

@@ -1,0 +1,47 @@
+@import '../abstract/_var.sass'
+
+.rodape
+    header
+        display: flex
+        flex-direction: column
+        .logo
+            width: 150px
+            margin: 2rem 0
+        .redes
+            display: flex
+            align-items: center
+            justify-content: space-around
+            @include reset()
+            .rede
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: space-around
+                a
+                    color: white
+
+                    img
+                        color: white
+                        border: 2px solid white
+                        border-radius: 10px
+
+                        padding: 10px
+                        transition: 0.4s
+                        &:hover
+                            border: 2px solid $cor-logo
+                            box-shadow: 1px 1px 10px 5px $cor-logo
+                            transition: 0.4s
+    .download
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 3rem
+        .lojas
+            display: flex
+            flex-direction: column
+            margin: 1rem
+            gap: 1rem
+            a
+                img
+                    width: 200px
