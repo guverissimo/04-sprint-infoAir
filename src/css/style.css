@@ -1,3 +1,65 @@
 html, body {
   font-family: "Roboto", sans-serif;
+  color: #FFF;
+}
+
+.main-container {
+  background-color: #101010;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+}
+
+.navbar {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.collapse ul {
+  margin-left: 2rem;
+}
+
+.login {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.login p {
+  font-size: 0.7317073171rem;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  border: 2px solid #1b64ce;
+  border-radius: 10px;
+  font-weight: 300;
+  transition: 0.4s;
+}
+.login p:hover {
+  box-shadow: 1px 1px 15px 3px #1b64ce;
+  color: white;
+  transition: 0.4s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+.logo img {
+  width: 50px;
+}
+.logo p {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  color: #1b64ce;
+}
+.logo p span {
+  font-weight: 900;
+  color: #949494 !important;
 }/*# sourceMappingURL=style.css.map */

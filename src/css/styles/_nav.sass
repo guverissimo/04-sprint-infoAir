@@ -1,0 +1,43 @@
+@import '../abstract/_var.sass'
+
+.navbar
+    margin-top: 1rem
+    margin-bottom: 2rem    
+.collapse
+    ul
+        margin-left: 2rem
+
+.login
+    display: flex
+    gap: 2rem
+    justify-content: center
+    align-content: center
+    text-align: center
+    p
+        font-size: $fonte-size /4.1
+        text-transform: uppercase
+        padding: 5px 30px
+        border: 2px solid $cor-logo
+        border-radius: 10px
+        font-weight: 300
+        transition: 0.4s
+
+        &:hover
+            box-shadow: 1px 1px 15px 3px $cor-logo
+            color: white    
+            transition: 0.4s
+.logo
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    gap: 0.5rem
+    img
+        width: 50px
+    p
+        font-size: $fonte-size / 1.5
+        @include reset()
+        color: $cor-logo
+        span
+            font-weight: 900
+            color: $fonte-cor-secundaria !important
