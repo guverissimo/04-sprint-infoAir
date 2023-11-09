@@ -1,0 +1,40 @@
+@import '../abstract/_var'
+.home-container
+    @include reset()
+    text-align: center
+    .header
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 0.5rem
+        p
+            @include reset()
+    .temperatura
+        .main-temp
+            display: flex
+            align-items: center
+            justify-content: center
+            h1
+               @include reset() 
+               font-size: $fonte-size *2
+                
+            img
+                width: 130px
+    .weather-infos
+        h5
+            font-size: $fonte-size /3
+            color: $fonte-cor-secundaria
+        .sub-infos
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-around
+            gap: 1rem
+            margin-top: 2rem 
+            .box
+                width: 200px
+                border-radius: 10px
+                background-color: #1a1a1a
+                padding: 20px
+                &:hover
+                    box-shadow: 1px 1px 20px 5px #1a1a1a

@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg container">
-        <div className="d-flex container-fluid p-0 justify-content-evenly ">
+        <div className="d-flex container-fluid ">
           <div>
             <Link className="nav-link active text-white logo" to="/">
               <img src={Icon} alt="Icon da InfoAir" />

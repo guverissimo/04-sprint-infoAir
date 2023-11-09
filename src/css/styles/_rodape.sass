@@ -36,7 +36,7 @@
         flex-direction: column
         justify-content: center
         align-items: center
-        margin: 3rem
+        margin: 1rem
         .lojas
             display: flex
             flex-direction: column
@@ -45,3 +45,16 @@
             a
                 img
                     width: 200px
+
+@media screen and (min-width: 700px) 
+    .rodape
+        header
+            flex-direction: row
+            justify-content: space-between
+            .logo
+                width: 200px
+            .redes
+                gap: 1rem
+        .download
+            .lojas
+                flex-direction: row

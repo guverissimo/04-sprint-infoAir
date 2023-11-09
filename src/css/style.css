@@ -9,15 +9,13 @@ html, body {
   margin: 0;
   background-color: #101010;
   width: 100%;
-  height: 100vh;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 8fr 1fr;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-rows: 0.2fr 1fr 0.4fr;
 }
 
 .navbar {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  height: 120px;
 }
 
 .collapse ul {
@@ -109,7 +107,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  margin: 1rem;
 }
 .rodape .download .lojas {
   display: flex;
@@ -119,4 +117,69 @@ html, body {
 }
 .rodape .download .lojas a img {
   width: 200px;
+}
+
+@media screen and (min-width: 700px) {
+  .rodape header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rodape header .logo {
+    width: 200px;
+  }
+  .rodape header .redes {
+    gap: 1rem;
+  }
+  .rodape .download .lojas {
+    flex-direction: row;
+  }
+}
+.home-container {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.home-container .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.home-container .header p {
+  padding: 0;
+  margin: 0;
+}
+.home-container .temperatura .main-temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-container .temperatura .main-temp h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 6rem;
+}
+.home-container .temperatura .main-temp img {
+  width: 130px;
+}
+.home-container .weather-infos h5 {
+  font-size: 1rem;
+  color: #949494;
+}
+.home-container .weather-infos .sub-infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.home-container .weather-infos .sub-infos .box {
+  width: 200px;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  padding: 20px;
+}
+.home-container .weather-infos .sub-infos .box:hover {
+  box-shadow: 1px 1px 20px 5px #1a1a1a;
 }/*# sourceMappingURL=style.css.map */
