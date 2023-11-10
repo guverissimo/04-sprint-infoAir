@@ -89,18 +89,10 @@ html, body {
 }
 .rodape header .redes .rede a {
   color: white;
+  font-size: 3rem;
 }
-.rodape header .redes .rede a img {
-  color: white;
-  border: 2px solid white;
-  border-radius: 10px;
-  padding: 10px;
-  transition: 0.4s;
-}
-.rodape header .redes .rede a img:hover {
-  border: 2px solid #1b64ce;
-  box-shadow: 1px 1px 10px 5px #1b64ce;
-  transition: 0.4s;
+.rodape header .redes .rede a:hover {
+  border-bottom: 5px solid #1b64ce;
 }
 .rodape .download {
   display: flex;
@@ -137,6 +129,7 @@ html, body {
 .home-container {
   padding: 0;
   margin: 0;
+  width: 100%;
   text-align: center;
 }
 .home-container .header {
@@ -166,20 +159,34 @@ html, body {
   font-size: 1rem;
   color: #949494;
 }
-.home-container .weather-infos .sub-infos {
+.home-container .weather-infos .informacoes {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  gap: 1rem;
+  gap: 1.2rem;
   margin-top: 2rem;
 }
-.home-container .weather-infos .sub-infos .box {
+.home-container .weather-infos .informacoes .box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
   width: 200px;
-  border-radius: 10px;
-  background-color: #1a1a1a;
+  border-radius: 20px;
+  color: #1b64ce;
+  background-color: #1f1f1f;
   padding: 20px;
 }
-.home-container .weather-infos .sub-infos .box:hover {
-  box-shadow: 1px 1px 20px 5px #1a1a1a;
+.home-container .weather-infos .informacoes .box:hover {
+  box-shadow: 1px 1px 20px 5px #1b64ce;
+}
+.home-container .weather-infos .informacoes .box h4 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 700px) {
+  .home-container .weather-infos .informacoes {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */

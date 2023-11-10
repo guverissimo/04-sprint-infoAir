@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, } from "react-icons/fa6";
 
 const Home = () => {
   const API_KEY = "43be990ebe164cdbb43163721230911";
@@ -25,6 +25,7 @@ const Home = () => {
   fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Sao Paulo&aqi=no&lang=pt`)
   .then((res)=> res.json())
   .then((data) => {
+
     setLocal({...local, 'pais': data.location.country, 'nome': data.location.name })
     setWheater({...wheater, 
       'temperatura': data.current.temp_c, 
@@ -41,7 +42,7 @@ const Home = () => {
 
   return (
   <>
-    <div className="container home-container">
+    <div className="home-container">
       <header className="header">
         <FaLocationDot></FaLocationDot>
         <p>{local.nome}</p>
@@ -55,17 +56,17 @@ const Home = () => {
       </div>
       <div className="weather-infos">
         <h5>Ultima atualização: {wheater.data}</h5>
-        <div className="sub-infos">
+        <div className="informacoes">
           <div className="box">
-            <h4>Sensação</h4>
+            <h5>Sensação</h5>
             <h4>{wheater.sensacao}</h4>
           </div>
           <div className="box">
-            <h4>Humidade</h4>
+            <h5>Humidade</h5>
             <h4>{wheater.umidade}</h4>
           </div>
           <div className="box">
-            <h4>Valocidade do Vento</h4>
+            <h5>Valocidade do Vento</h5>
             <h4>{wheater.vento}</h4>
           </div>
         </div>

@@ -1,11 +1,9 @@
 import {} from "react";
 import logo from "../assets/logo.png";
-import facebook from "../assets/icons8-facebook-50.png";
-import instagram from "../assets/icons8-instagram-50.png";
-import tiktok from "../assets/icons8-tiktok-50.png";
-import whatsapp from "../assets/icons8-whatsapp-50.png";
 import appStore from "../assets/appStore.png";
 import googlePlay from "../assets/googlePlay.png";
+
+import { FaFacebookF, FaWhatsapp, FaTiktok, FaInstagram } from "react-icons/fa6";
 
 const Rodape = () => {
   return (
@@ -19,22 +17,22 @@ const Rodape = () => {
                 href="https://www.facebook.com/fiap?ref=embed_page"
                 target="blank"
               >
-                <img src={facebook} alt="Facebook" />
+                <FaFacebookF></FaFacebookF>
               </a>
             </div>
             <div className="rede">
               <a href="https://www.instagram.com/" target="blank">
-                <img src={instagram} alt="Instagram" />
+                <FaInstagram></FaInstagram>
               </a>
             </div>
             <div className="rede">
               <a href="https://www.tiktok.com/pt-BR/" target="blank">
-                <img src={tiktok} alt="" />
+                <FaTiktok></FaTiktok>
               </a>
             </div>
             <div className="rede">
               <a href="https://web.whatsapp.com/" target="blank">
-                <img src={whatsapp} alt="" />
+                <FaWhatsapp></FaWhatsapp>
               </a>
             </div>
           </div>

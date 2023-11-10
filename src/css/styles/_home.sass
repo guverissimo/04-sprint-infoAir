@@ -1,6 +1,7 @@
 @import '../abstract/_var'
 .home-container
     @include reset()
+    width: 100%
     text-align: center
     .header
         display: flex
@@ -24,17 +25,31 @@
         h5
             font-size: $fonte-size /3
             color: $fonte-cor-secundaria
-        .sub-infos
+        .informacoes
             display: flex
             flex-direction: column
+            justify-content: center
             align-items: center
-            justify-content: space-around
-            gap: 1rem
-            margin-top: 2rem 
+            gap: 1.2rem
+            margin-top: 2rem
             .box
+                display: flex
+                flex-direction: column
+                text-align: center
+                align-items: center
                 width: 200px
-                border-radius: 10px
-                background-color: #1a1a1a
+                border-radius: 20px
+                color: $cor-logo
+                background-color: #1f1f1f
                 padding: 20px
                 &:hover
-                    box-shadow: 1px 1px 20px 5px #1a1a1a
+                    box-shadow: 1px 1px 20px 5px $cor-logo
+                h4
+                    font-size: $fonte-size
+
+@media screen and (min-width: 700px) 
+    .home-container
+        .weather-infos
+            .informacoes
+                flex-direction: row
+                
