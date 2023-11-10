@@ -1,0 +1,45 @@
+@import '../abstract/_var.sass'
+
+.saude-container
+    width: 100%
+    .saude
+        .header
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 1rem
+            margin: 1rem
+            .icon
+                font-size: $fonte-size /2
+                color: $cor-logo
+            h1
+                @include reset()
+                font-size: $fonte-size
+                color: $cor-logo
+        .textos
+            font-size: $fonte-size/2.2
+    .prevencao
+        .header
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 1rem
+            margin: 1rem
+            .icon
+                font-size: $fonte-size
+                color: $cor-logo
+            h1
+                @include reset()
+                font-size: $fonte-size
+                color: $cor-logo
+        .textos
+            h3
+                font-size: $fonte-size/2.2    
+                margin-bottom: 2rem
+            ol
+                li
+                    font-size: $fonte-size/2.6  
+
+               
+
+@media screen and (min-width: 700px) 

@@ -38,11 +38,6 @@ const Nav = () => {
                   Sobre
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active text-white" to="/">
-                  Home
-                </Link>
-              </li>
               <li className="nav-item dropdown ">
                 <a
                   className="nav-link dropdown-toggle text-white"
@@ -51,22 +46,17 @@ const Nav = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown link
+                  Saúde
                 </a>
                 <ul className="dropdown-menu bg-dark">
                   <li>
-                    <Link className="nav-link active text-white" to="/">
-                      Home
+                    <Link className="nav-link active text-white" to="/saude">
+                      Prevenção
                     </Link>
                   </li>
                   <li>
-                    <Link className="nav-link active text-white" to="/">
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="nav-link active text-white" to="/">
-                      Home
+                    <Link className="nav-link active text-white" to="/mapa">
+                      Mapa
                     </Link>
                   </li>
                 </ul>

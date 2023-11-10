@@ -231,4 +231,51 @@ html, body {
   .sobre-container .content img {
     width: 30%;
   }
+}
+.saude-container {
+  width: 100%;
+}
+.saude-container .saude .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+.saude-container .saude .header .icon {
+  font-size: 1.5rem;
+  color: #1b64ce;
+}
+.saude-container .saude .header h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  color: #1b64ce;
+}
+.saude-container .saude .textos {
+  font-size: 1.3636363636rem;
+}
+.saude-container .prevencao .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+.saude-container .prevencao .header .icon {
+  font-size: 3rem;
+  color: #1b64ce;
+}
+.saude-container .prevencao .header h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+  color: #1b64ce;
+}
+.saude-container .prevencao .textos h3 {
+  font-size: 1.3636363636rem;
+  margin-bottom: 2rem;
+}
+.saude-container .prevencao .textos ol li {
+  font-size: 1.1538461538rem;
 }/*# sourceMappingURL=style.css.map */

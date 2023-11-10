@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaLocationDot, } from "react-icons/fa6";
 
 const Home = () => {
@@ -22,23 +22,26 @@ const Home = () => {
   })
 
 
-  fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Sao Paulo&aqi=no&lang=pt`)
-  .then((res)=> res.json())
-  .then((data) => {
-
-    setLocal({...local, 'pais': data.location.country, 'nome': data.location.name })
-    setWheater({...wheater, 
-      'temperatura': data.current.temp_c, 
-      'sensacao': data.current.feelslike_c, 
-      'data': data.current.last_updated, 
-      'umidade': data.current.humidity, 
-      'vento': data.current.wind_kph, 
-      'condicao': {
-        'texto': data.current.condition.text,
-        'icone': data.current.condition.icon,
-      }
+  useEffect(() => {
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Sao Paulo&aqi=no&lang=pt`)
+    .then((res)=> res.json())
+    .then((data) => {
+  
+      setLocal({...local, 'pais': data.location.country, 'nome': data.location.name })
+      setWheater({...wheater, 
+        'temperatura': data.current.temp_c, 
+        'sensacao': data.current.feelslike_c, 
+        'data': data.current.last_updated, 
+        'umidade': data.current.humidity, 
+        'vento': data.current.wind_kph, 
+        'condicao': {
+          'texto': data.current.condition.text,
+          'icone': data.current.condition.icon,
+        }
+      })
     })
-  })
+  }, [])
+
 
   return (
   <>
