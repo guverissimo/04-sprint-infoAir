@@ -34,8 +34,8 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active text-white" to="/">
-                  Home
+                <Link className="nav-link active text-white" to="/sobre">
+                  Sobre
                 </Link>
               </li>
               <li className="nav-item">
