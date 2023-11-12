@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "../css/styles/BotaoAnimado.css";
 
 const Login = () => {
   const [users, setUsers] = useState([]);
@@ -34,15 +35,15 @@ const Login = () => {
     e.preventDefault();
     const inputEmail = user.email;
     const inputSenha = user.senha;
-    const userID = userData[2]
+    const userID = userData[2];
     if (inputEmail == userData[0] && inputSenha == userData[1]) {
       alert("Logado");
-      setLogado(true)
+      setLogado(true);
     } else {
       alert("Usuario nao encontrado");
     }
-    if(logado){
-      window.location = `/perfil/${userID}`
+    if (logado) {
+      window.location = `/perfil/${userID}`;
     }
   };
 
@@ -57,21 +58,29 @@ const Login = () => {
             <div className="inputs">
               <div className="input-box">
                 <label>Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={users.email}
-                  onChange={handleChange}
-                />
+                <div className="wrapper">
+                  <div className="box">
+                    <input
+                      type="email"
+                      name="email"
+                      value={users.email}
+                      onChange={handleChange}
+                    />
+                  </div>
+                </div>
               </div>
               <div className="input-box">
                 <label>Senha</label>
-                <input
-                  type="password"
-                  name="senha"
-                  onChange={handleChange}
-                  value={users.senha}
-                />
+                <div className="wrapper">
+                  <div className="box">
+                    <input
+                      type="password"
+                      name="senha"
+                      onChange={handleChange}
+                      value={users.senha}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
             <button type="submit" onClick={buscarUsuario}>
@@ -79,7 +88,10 @@ const Login = () => {
             </button>
           </form>
         </div>
-        <Link className="link-cadastro" to="/cadastro">Cadastre- se</Link>
+
+        <Link className="link-cadastro" to="/cadastro">
+          Cadastre- se
+        </Link>
       </div>
     </>
   );

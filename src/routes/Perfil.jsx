@@ -30,16 +30,18 @@ const Perfil = () => {
 
   return (
     <>
-      <div className="perfil">
+      <div className="perfil-container container">
         <header>
-        <p>Bem-vindo(a) ao seu painel InfoAir  </p>
-        <IoPersonCircleSharp></IoPersonCircleSharp>
-          <h3>
-            {dados.nome}
-          </h3>
-          <p>{dados.email}</p>
-          <p>{dados.tel}</p>
-          <p>{dados.endereco}</p>
+            <p>Bem-vindo(a) ao seu painel InfoAir  </p>
+            <IoPersonCircleSharp className="perfil-img"></IoPersonCircleSharp>
+            <h3>
+                {dados.nome}
+            </h3>
+            <p className="perfil-info">
+                {dados.email} <br />
+                {dados.tel}<br />
+                CEP: {dados.endereco}
+            </p>
         </header>
         <div className="perfil-localizacao">
             <p>Sua localização: {endereco.localidade}</p>
