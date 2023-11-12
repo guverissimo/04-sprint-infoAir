@@ -32,24 +32,11 @@ const Cadastro = () => {
       })
       .then((data) => {
         console.log(data);
+        alert("Cadastrado com Sucesso")
+        window.location = '/login'
       });
   };
 
-  // useEffect(() => {
-  //   fetch(`http://localhost:5000/usuarios`, {
-  //     method: "post",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(novo),
-  //   })
-  //     .then((res) => {
-  //       return res.json();
-  //     })
-  //     .then((data) => {
-  //       console.log(data);
-  //     });
-  // },[]);
 
   return (
     <>
@@ -74,17 +61,6 @@ const Cadastro = () => {
                 name="cpf"
                 value={novo.cpf}
                 placeholder="Digite seu CPF"
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-          <div className="wrapper">
-            <div className="box">
-              <input
-                type="text"
-                name="email"
-                value={novo.email}
-                placeholder="E-mail"
                 onChange={handleChange}
               />
             </div>

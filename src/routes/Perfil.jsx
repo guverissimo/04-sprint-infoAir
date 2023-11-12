@@ -19,7 +19,7 @@ const Perfil = () => {
       });
   }, [id]);
 
-  useEffect(() => {
+useEffect(() => {
     const cep = dados.endereco
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
     .then((res)=> {return res.json()})
