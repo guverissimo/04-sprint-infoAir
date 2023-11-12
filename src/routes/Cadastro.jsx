@@ -9,9 +9,7 @@ const Cadastro = () => {
     cpf: "",
     email: "",
     tel: "",
-    endereco: {
-      cep: "",
-    },
+    endereco: "",
     senha: "",
   });
 
