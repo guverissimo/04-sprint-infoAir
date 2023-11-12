@@ -26,6 +26,15 @@
       "endereco": "09910120",
       "senha": "teste",
       "id": 3
+    },
+    {
+      "nome": "Verissimo",
+      "cpf": "01234567890",
+      "email": "verissimo@verissimo.com",
+      "tel": "11984591617",
+      "endereco": "09910120",
+      "senha": "123456",
+      "id": 4
     }
   ]
 }

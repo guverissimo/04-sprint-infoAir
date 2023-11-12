@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import "../css/styles/BotaoAnimado.css";
 
 const Cadastro = () => {
   let { id } = useParams();
@@ -52,51 +53,86 @@ const Cadastro = () => {
 
   return (
     <>
-      <div className="cadastro">
+      <div className="cadastro-container container">
         <h1>Complete as informacoes</h1>
         <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="nome"
-            value={novo.nome}
-            placeholder="Nome completo"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="cpf"
-            value={novo.cpf}
-            placeholder="Digite seu CPF"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="email"
-            value={novo.email}
-            placeholder="E-mail"
-            onChange={handleChange}
-          />
-          <input
-            type="tel"
-            name="tel"
-            value={novo.tel}
-            placeholder="Numero de telefone"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="endereco"
-            value={novo.endereco.cep}
-            placeholder="CEP"
-            onChange={handleChange}
-          />
-          <input
-            type="password"
-            name="senha"
-            value={novo.senha}
-            placeholder="Escolha uma senha"
-            onChange={handleChange}
-          />
+          <div className="wrapper">
+            <div className="box">
+              <input
+                type="text"
+                name="nome"
+                value={novo.nome}
+                placeholder="Nome completo"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="wrapper">
+            <div className="box">
+              <input
+                type="text"
+                name="cpf"
+                value={novo.cpf}
+                placeholder="Digite seu CPF"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="wrapper">
+            <div className="box">
+              <input
+                type="text"
+                name="email"
+                value={novo.email}
+                placeholder="E-mail"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="wrapper">
+            <div className="box">
+              <input
+                type="text"
+                name="email"
+                value={novo.email}
+                placeholder="E-mail"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="wrapper">
+            <div className="box">
+              <input
+                type="tel"
+                name="tel"
+                value={novo.tel}
+                placeholder="Numero de telefone"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="wrapper">
+            <div className="box">
+              <input
+                type="text"
+                name="endereco"
+                value={novo.endereco.cep}
+                placeholder="CEP (01310930)"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="wrapper">
+            <div className="box">
+              <input
+                type="password"
+                name="senha"
+                value={novo.senha}
+                placeholder="Escolha uma senha"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
           <button type="submit">Enviar</button>
         </form>
       </div>

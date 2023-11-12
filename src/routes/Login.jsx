@@ -37,7 +37,7 @@ const Login = () => {
     const inputSenha = user.senha;
     const userID = userData[2];
     if (inputEmail == userData[0] && inputSenha == userData[1]) {
-      alert("Logado");
+      alert("Sucesso");
       setLogado(true);
     } else {
       alert("Usuario nao encontrado");

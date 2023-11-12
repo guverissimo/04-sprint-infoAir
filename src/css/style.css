@@ -360,4 +360,38 @@ html, body {
 .perfil-container header .perfil-info {
   text-align: center;
   color: #949494;
+}
+
+.cadastro-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cadastro-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cadastro-container form button {
+  width: 95%;
+  margin: 1rem;
+  color: white;
+  background-color: #1b64ce;
+  height: 3rem;
+  border: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.cadastro-container form button:hover {
+  background-color: white;
+  color: #1b64ce;
+  box-shadow: 1px 1px 4px 1px white;
+}
+.cadastro-container form .wrapper {
+  width: 350px;
 }/*# sourceMappingURL=style.css.map */
