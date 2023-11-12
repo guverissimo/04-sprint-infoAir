@@ -5,6 +5,7 @@ const Login = () => {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState([]);
   const [userData, setUserData] = useState();
+  const [logado, setLogado] = useState(true);
 
   useEffect(() => {
     fetch(`http://localhost:5000/usuarios/`)
@@ -33,11 +34,15 @@ const Login = () => {
     e.preventDefault();
     const inputEmail = user.email;
     const inputSenha = user.senha;
-    console.log(userData);
+    const userID = userData[2]
     if (inputEmail == userData[0] && inputSenha == userData[1]) {
       alert("Logado");
+      setLogado(true)
     } else {
       alert("Usuario nao encontrado");
+    }
+    if(logado){
+      window.location = `/perfil/${userID}`
     }
   };
 
