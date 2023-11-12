@@ -40,7 +40,7 @@ const WeatherAPI = (props) => {
         }
       })
     })
-  }, [])
+  }, [props.cidade, local, wheater])
 
 
   return (
