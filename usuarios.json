@@ -8,6 +8,15 @@
       "endereco": "09910120",
       "senha": "Senha123",
       "id": 1
+    },
+    {
+      "nome": "adm",
+      "cpf": "12345678900",
+      "email": "adm@infoair.com",
+      "tel": "11940028922",
+      "endereco": "09910120",
+      "senha": "admin12345",
+      "id": 2
     }
   ]
 }
