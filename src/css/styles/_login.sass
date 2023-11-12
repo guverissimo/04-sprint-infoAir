@@ -1,0 +1,54 @@
+@import '../abstract/_var.sass'
+
+.login-container
+    @include reset()
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .logar
+        width: 300px
+        form
+            width: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .inputs
+                display: flex
+                width: 100%
+                flex-direction: column
+                @include reset()
+                .input-box
+                    display: flex
+                    flex-direction: column
+                    text-align: center
+                    margin: 0.5rem
+                    gap: 14px
+                    input
+                        width: 100%
+                        font-family: $fonte
+                        height: 3rem
+                        border: 2px solid $cor-logo
+                        background-color: transparent
+                        outline: 0
+                        color: white
+                        padding: 5px 20px
+        button
+            width: 95%
+            margin: 1rem
+            color: white
+            background-color: $cor-logo
+            height: 3rem
+            border: none
+            font-size: $fonte-size /2.5
+            text-transform: uppercase
+            font-weight: 600
+            letter-spacing: 2px
+            &:hover
+                background-color: white
+                color: $cor-logo
+    .link-cadastro
+        color: $fonte-cor-secundaria
+        font-size: $fonte-size /2.7
+

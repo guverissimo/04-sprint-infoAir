@@ -17,6 +17,15 @@
       "endereco": "09910120",
       "senha": "admin12345",
       "id": 2
+    },
+    {
+      "nome": "Teste",
+      "cpf": "12345678900",
+      "email": "teste@gmail.com",
+      "tel": "11984591617",
+      "endereco": "09910120",
+      "senha": "teste",
+      "id": 3
     }
   ]
 }

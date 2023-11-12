@@ -14,6 +14,12 @@ html, body {
   grid-auto-rows: auto 1fr 0.4fr;
   grid-template-areas: "nav" "main" "footer";
 }
+.main-container .navegacao {
+  grid-area: nav;
+}
+.main-container .main {
+  grid-area: main;
+}
 .main-container .rodape {
   grid-area: footer;
 }
@@ -34,7 +40,7 @@ html, body {
   align-content: center;
   text-align: center;
 }
-.login p {
+.login .login-link {
   font-size: 0.7317073171rem;
   text-transform: uppercase;
   padding: 5px 30px;
@@ -44,7 +50,7 @@ html, body {
   transition: 0.4s;
   margin-top: 1.5rem;
 }
-.login p:hover {
+.login .login-link:hover {
   box-shadow: 1px 1px 15px 3px #1b64ce;
   color: white;
   transition: 0.4s;
@@ -283,4 +289,67 @@ html, body {
 }
 .saude-container .prevencao .textos ol li {
   font-size: 1.1538461538rem;
+}
+
+.login-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-container .logar {
+  width: 300px;
+}
+.login-container .logar form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-container .logar form .inputs {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.login-container .logar form .inputs .input-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0.5rem;
+  gap: 14px;
+}
+.login-container .logar form .inputs .input-box input {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  height: 3rem;
+  border: 2px solid #1b64ce;
+  background-color: transparent;
+  outline: 0;
+  color: white;
+  padding: 5px 20px;
+}
+.login-container .logar button {
+  width: 95%;
+  margin: 1rem;
+  color: white;
+  background-color: #1b64ce;
+  height: 3rem;
+  border: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.login-container .logar button:hover {
+  background-color: white;
+  color: #1b64ce;
+}
+.login-container .link-cadastro {
+  color: #949494;
+  font-size: 1.1111111111rem;
 }/*# sourceMappingURL=style.css.map */
