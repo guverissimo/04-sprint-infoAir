@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg container">
-        <div className="d-flex container-fluid ">
+        <div className="d-flex flex-row container-fluid justify-content-around align-items-center">
           <div>
             <Link className="nav-link active text-white logo" to="/">
               <img src={Icon} alt="Icon da InfoAir" />
@@ -26,8 +26,8 @@ const Nav = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
+          <div className="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul className="navbar-nav ">
               <li className="nav-item">
                 <Link className="nav-link active text-white" to="/">
                   Home
@@ -61,12 +61,11 @@ const Nav = () => {
                   </li>
                 </ul>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active text-white" to='/login'>Login</Link>
+              </li>
             </ul>
           </div>
-            <div className="collapse navbar-collapse login" id="navbarNavDropdown">
-              <p>Cadastro</p>
-              <p>Login</p>
-            </div>
         </div>
       </nav>
     </>

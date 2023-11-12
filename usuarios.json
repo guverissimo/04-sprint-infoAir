@@ -1,0 +1,13 @@
+{
+  "usuarios": [
+    {
+      "nome": "Gustavo Verissimo",
+      "cpf": "47216322827",
+      "email": "guvpa@icloud.com",
+      "tel": "11984591617",
+      "endereco": "09910120",
+      "senha": "Senha123",
+      "id": 1
+    }
+  ]
+}

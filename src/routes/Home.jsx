@@ -3,7 +3,6 @@ import { FaLocationDot, } from "react-icons/fa6";
 
 const Home = () => {
   const API_KEY = "43be990ebe164cdbb43163721230911";
-  
   let [local, setLocal] =useState({
     'pais': '',
     'nome': '',
@@ -23,7 +22,7 @@ const Home = () => {
 
 
   useEffect(() => {
-    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Sao Paulo&aqi=no&lang=pt`)
+    fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=Sao Paulo&aqi=no&lang=pt&aqi=yes`)
     .then((res)=> res.json())
     .then((data) => {
   

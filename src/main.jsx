@@ -6,6 +6,8 @@ import App from "./App.jsx";
 import Sobre from "./routes/Sobre.jsx";
 import Saude from "./routes/Saude.jsx";
 import Mapa from "./routes/Mapa.jsx";
+import Login from "./routes/Login.jsx";
+import Cadastro from "./routes/Cadastro.jsx";
 
 const router = createBrowserRouter ([
   {
@@ -17,6 +19,8 @@ const router = createBrowserRouter ([
       {path: '/sobre', element: <Sobre />},
       {path: '/saude', element: <Saude />},
       {path: '/mapa', element: <Mapa />},
+      {path: '/login', element: <Login />},
+      {path: '/cadastro', element: <Cadastro />},
     ]
   }
 ])
